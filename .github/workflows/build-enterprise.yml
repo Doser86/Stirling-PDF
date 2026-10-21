@@ -42,7 +42,6 @@ jobs:
     uses: ./.github/workflows/_runner-pick.yml
 
   playwright-e2e-enterprise:
-    if: ${{ vars.RUN_ENTERPRISE_E2E == 'true' }}
     environment:
       name: ci-unsigned
       deployment: false
